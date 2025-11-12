@@ -59,6 +59,6 @@ if st.button("Predict"):
     prediction = model.predict(input_data)
 
     if prediction[0]==1:
-        st.success("You have a heart disease. Visit Doctor Pranal Thapa")
+        st.success("You may have a heart disease according to this calculation. Take Care- Pranal Thapa")
     else:
-        st.success("You dont have a heart disease. Stay Safe and Healthy")
+        st.success("You may not have a heart disease according to this calculation. Stay Safe and Healthy - Pranal Thapa")
