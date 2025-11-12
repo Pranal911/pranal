@@ -22,7 +22,10 @@ for name, path in model_files.items():
 
 st.title(" Heart Disease Prediction System")
 st.write(" Enter the technical details to check if your have heart disease or not")
-
+st.warning(
+    f"⚠️ Disclaimer: This system is developed by Pranal Thapa (student) using datasets from kaggle, and is for educational use only."
+    " The results are based on algorithms and are NOT to be used for actual medical advice or diagnosis."
+)
 # User Inputs
 age = st.number_input("Age", min_value=1, max_value=100,value=50)
 sex= st.selectbox("Sex 0 if female 1 if male",[0,1])
